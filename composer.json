@@ -1,0 +1,20 @@
+{
+    "name" : "andrez/php-framework",
+    "description" : "PHP App Framework",
+    "autoload": {
+        "classmap": [
+            "./"
+        ],
+        "files": [
+            "core/helpers/environment.php",
+            "core/helpers/languages.php",
+            "core/helpers/functions.php",
+            "core/helpers/mail.php",
+            "core/helpers/usersSession.php"
+        ]
+    },
+    "require": {
+        "gettext/gettext": "^5.2",
+        "phpmailer/phpmailer": "~6.1"
+    }
+}

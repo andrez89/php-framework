@@ -1,0 +1,11 @@
+<Files "local-db.sqlite3">
+  Order Allow,Deny
+  Deny from all
+  Require all denied
+</Files>
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [NC,L]
